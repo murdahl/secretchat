@@ -62,7 +62,9 @@ const ChatRoom: FunctionComponent<Props> = ({ currentUser, firestore }) => {
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
         />
-        <button type="submit">👻</button>
+        <button type="submit">
+          <span>👻</span>
+        </button>
       </form>
     </>
   );

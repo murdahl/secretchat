@@ -51,7 +51,7 @@ interface SignOutProps {
   auth: firebase.auth.Auth;
 }
 
-export const SignOut: FunctionComponent<SignOutProps> = ({}) => {
+export const SignOut: FunctionComponent<SignOutProps> = ({ auth }) => {
   return (
     auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>
   );
