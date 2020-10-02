@@ -15,7 +15,7 @@ const ChatMessage: FunctionComponent<Props> = ({ currentUser, message }) => {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt={currentUser.displayName || ""} />
       <p>{text}</p>
     </div>
   );

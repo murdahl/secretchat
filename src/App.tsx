@@ -26,7 +26,9 @@ function App() {
   const [user] = useAuthState(auth);
   return (
     <div className="App">
-      <header></header>
+      <header>
+        <h1>The super secret chat room</h1>
+      </header>
       <section>
         {user && auth.currentUser ? (
           <ChatRoom currentUser={auth.currentUser} firestore={firestore} />
